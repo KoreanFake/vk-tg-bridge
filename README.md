@@ -1,5 +1,11 @@
 # VK → Telegram Bridge
 
+[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
+[![Docker](https://img.shields.io/badge/Docker-compose-2496ED?logo=docker)](https://docs.docker.com/compose/)
+[![VK API 5.199](https://img.shields.io/badge/VK%20API-5.199-0077FF)](https://dev.vk.com/)
+[![Telegram Bot API](https://img.shields.io/badge/Telegram%20Bot%20API-aiogram%203-26A5E4?logo=telegram)](https://core.telegram.org/bots/api)
+[![Лицензия MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+
 **Self-hosted мост между сообществом ВКонтакте и Telegram.** Сообщения клиентов вашего сообщества VK приходят в закрытую Telegram-группу (отдельная тема на каждого клиента), а ответы сотрудников из Telegram уходят клиентам во ВКонтакте от имени сообщества.
 
 Не нужны платные платформы автоматизации и включённый домашний компьютер: один контейнер на любом VPS (~256 МБ RAM), только исходящие соединения — публичный IP, домен и открытые порты не требуются.
