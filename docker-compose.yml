@@ -1,0 +1,15 @@
+services:
+  bridge:
+    build: .
+    container_name: vk-tg-bridge
+    restart: unless-stopped          # автозапуск после перезагрузки VPS и сбоев
+    env_file: .env
+    volumes:
+      - ./data:/data                 # база SQLite и её резервные копии
+    logging:
+      driver: json-file              # ограничение размера журналов
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # Порты не публикуем: работают только исходящие соединения (long polling),
+    # поэтому сервис не конфликтует с другими приложениями на VPS.
