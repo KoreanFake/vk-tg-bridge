@@ -23,7 +23,7 @@
 3. **[Разверните на VPS](docs/deploy-vps.md)** — одна команда-установщик:
 
 ```bash
-git clone <этот репозиторий> vk-tg-bridge && cd vk-tg-bridge   # или распакуйте архив
+git clone https://github.com/KoreanFake/vk-tg-bridge.git && cd vk-tg-bridge
 bash scripts/setup.sh   # спросит токены и ID, всё установит и запустит
 ```
 
